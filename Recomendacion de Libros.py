@@ -22,10 +22,10 @@ el título del libro con la puntuación más alta en ese género.
 
 class Libro:
     def __init__(self,Titulo,Autor,Genero,Puntuacion):
-        self.Titulo: Titulo
-        self.Autor: Autor
-        self.Genero: Genero
-        self.Puntuacion: Puntuacion
+        self.Titulo = Titulo
+        self.Autor = Autor
+        self.Genero = Genero
+        self.Puntuacion = Puntuacion
 
 Lista_Libros = []
 libro1 = Libro("Cien años de soledad", "Gabriel García Márquez", "Ficcion", 4.5)
@@ -51,7 +51,7 @@ while True:
 
     if opcion == "1":
         busqueda_genero=input("Ingresar el Genero que desea Buscar: ")
-        libros_en_genero= [libro.titulo for libro in Lista_Libros if libro.genero == busqueda_genero]
+        libros_en_genero= [libro.Titulo for libro in Lista_Libros if libro.Genero == busqueda_genero]
 
         if libros_en_genero:
             print("Libros en el genero '{}' : " .format(busqueda_genero))
@@ -62,11 +62,11 @@ while True:
 
     elif opcion == "2":
         recomendacion_genero= input("Que genero le gusta?: ")
-        libros_en_genero=[libro for libro in Lista_Libros if libro.genero == recomendacion_genero]
+        libros_en_genero=[libro for libro in Lista_Libros if libro.Genero == recomendacion_genero]
 
         if libros_en_genero:
-            recomendacion_genero= max(libros_en_genero, key=lambda libro: libro.puntuacion)
-            print("La Recomendacion es: '{}'  con puntuacion {}".format(recomendacion_genero.titulo, recomendacion_genero.puntuacion))
+            recomendacion_genero= max(libros_en_genero, key=lambda libro: libro.Puntuacion)
+            print("La Recomendacion es: '{}'  con puntuacion {}".format(recomendacion_genero.Titulo, recomendacion_genero.Puntuacion))
         else:
             print("No hay libros para recomendar")
 
@@ -75,3 +75,5 @@ while True:
         break
     else:
         print("Opcion INVALIDA.")
+
+    print("\n")
