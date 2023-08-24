@@ -22,10 +22,10 @@ el título del libro con la puntuación más alta en ese género.
 
 class Libro:
     def __init__(self,Titulo,Autor,Genero,Puntuacion):
-        self.Titulo: Titulo
-        self.Autor: Autor
-        self.Genero: Genero
-        self.Puntuacion: Puntuacion
+        self.Titulo = Titulo
+        self.Autor = Autor
+        self.Genero = Genero
+        self.Puntuacion = Puntuacion
 
 Lista_Libros = []
 libro1 = Libro("Cien años de soledad", "Gabriel García Márquez", "Ficcion", 4.5)
