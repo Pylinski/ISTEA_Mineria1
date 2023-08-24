@@ -1,5 +1,25 @@
 #Recomendacion de Libros
 
+""" Desarrolla un sistema de recomendación de libros en Python. La aplicación debe permitir a
+los usuarios buscar libros por género y recibir recomendaciones basadas en sus intereses.
+
+Instrucciones:
+● Define una clase llamada “Libro” con los siguientes atributos: titulo, autor, genero y
+puntuacion (valor numérico que representa la popularidad del libro). Crea un método
+__init__ para inicializar estos atributos.
+● Crea una lista llamada lista_libros donde almacenarás los objetos de la clase Libro.
+● Implementa un bucle que permita a los usuarios realizar las siguientes acciones:
+    ○ Agregar Libro: Solicita al usuario que ingrese el título, autor, género y
+puntuación del libro. Crea un objeto Libro con estos atributos y agrega el
+objeto a la lista lista_libros.
+    ○ Buscar Libros por Género: Pregunta al usuario por un género y muestra
+una lista de títulos de libros en ese género.
+    ○ Recomendar Libro: Pregunta al usuario por su género de interés y muestra
+el título del libro con la puntuación más alta en ese género.
+● Ejecuta el bucle hasta que el usuario decida salir de la aplicación. """
+
+
+
 class Libro:
     def __init__(self,Titulo,Autor,Genero,Puntuacion):
         self.Titulo: Titulo
