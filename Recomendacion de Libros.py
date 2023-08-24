@@ -75,3 +75,5 @@ while True:
         break
     else:
         print("Opcion INVALIDA.")
+
+    print("\n")
